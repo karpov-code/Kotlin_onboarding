@@ -6,19 +6,21 @@ fun main() {
 
     print("Введите свой логин: ")
     val localLogin = readln()
-    if (localLogin == login){
+    if (localLogin == login) {
         print("Введите пароль: ")
         val localPassword = readln()
-        if(localPassword == password){
+        if (localPassword == password) {
             println("Вам разрешено входить на борт корабля!")
-        }else{
+        } else {
             println("Пароль неверный")
         }
-    }else{
-        println("""
+    } else {
+        println(
+            """
             |Пользователь не найден.
             |Необходима регистрация.
-        """.trimMargin())
+        """.trimMargin()
+        )
         print("Введите свой логин: ")
         login = readln()
         print("Введите пароль: ")
