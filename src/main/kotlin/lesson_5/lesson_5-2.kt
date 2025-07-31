@@ -4,9 +4,9 @@ const val ACCEPTABLE_YEAR_OF_BIRTH = 2007
 
 fun main() {
     val yearOfBirth = readln().toInt()
-    if (yearOfBirth <= ACCEPTABLE_YEAR_OF_BIRTH){
+    if (yearOfBirth <= ACCEPTABLE_YEAR_OF_BIRTH) {
         println("Показать экран со скрытым контентом")
-    }else{
+    } else {
         println("Доступ закрыт!")
     }
 
