@@ -1,6 +1,6 @@
 package org.example.lesson_3
 
-fun main(){
+fun main() {
     val username = "Ivan"
     var greeting = "Good afternoon!"
     println("$greeting $username")
