@@ -1,6 +1,6 @@
 package org.example.lesson_3
 
-fun main(){
+fun main() {
     var fullName = "Андреева Татьяна Сергеевна"
     var age = 20
     println("$fullName, $age")
