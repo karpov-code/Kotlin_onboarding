@@ -1,6 +1,6 @@
 package org.example.lesson_3
 
-fun main(){
+fun main() {
     var whereFrom = "E2"
     var where = "E4"
     var strokeNumber = 1
