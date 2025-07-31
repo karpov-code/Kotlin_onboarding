@@ -1,12 +1,15 @@
 package org.example.lesson_2
 
-fun main(){
-    val minutesOfDeparture: Int = (9*60 + 39)
-    val totalMinutesOfArrival: Int = minutesOfDeparture + 457
-    val hoursOfArrival: Int = totalMinutesOfArrival / 60
-    val minutesOfArrival: Int =  totalMinutesOfArrival % 60
+const val MINUTES_IN_AN_HOUR = 60
 
-    print(hoursOfArrival)
-    print(":")
-    print(minutesOfArrival)
+fun main() {
+    val departureHour = 9
+    val departureMinute = 39
+    val minutesWay = 457
+    val minutesOfDeparture: Int = (departureHour * MINUTES_IN_AN_HOUR + departureMinute)
+    val totalMinutesOfArrival: Int = minutesOfDeparture + minutesWay
+    val hoursOfArrival = String.format("%02d", (totalMinutesOfArrival / MINUTES_IN_AN_HOUR))
+    val minutesOfArrival = String.format("%02d", totalMinutesOfArrival % MINUTES_IN_AN_HOUR)
+
+    println("$hoursOfArrival:$minutesOfArrival")
 }
